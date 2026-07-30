@@ -13,8 +13,9 @@ from config import (
 
 
 def prepare_fonts():
-    """Download fonts from the respected URLs if not already present.
-       Returns a list of available fonts path."""
+    """Download fonts from the URLs if not already present.
+       Return: 
+        list of download fonts. """
     downloaded = []
     headers = {'User-Agent': 'Mozilla/5.0'}
     for name, url in FONT_URLS.items():
